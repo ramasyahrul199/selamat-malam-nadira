@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Nadira 💖 Dari Arul</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #1a1a2e, #16213e, #0f3460);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .moon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0); }
+        }
+        .star {
+            position: absolute;
+            font-size: 20px;
+            animation: twinkle 2s ease-in-out infinite;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 25px;
+            max-width: 450px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 0 8px 32px rgba(255, 215, 0, 0.15);
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #ffd700;
+        }
+        .from {
+            color: #ff9a76;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        .message {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .heart {
+            color: #ff4d6d;
+            font-size: 35px;
+            animation: heartbeat 1s ease-in-out infinite;
+            margin: 15px 0;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.25); }
+        }
+        .joke {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 18px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border-left: 3px solid #ffd700;
+        }
+        .btn {
+            margin-top: 10px;
+            padding: 14px 32px;
+            background: linear-gradient(45deg, #ff4d6d, #ff9a76);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.08);
+        }
+        .hidden {
+            display: none;
+            margin-top: 25px;
+            padding: 20px;
+            background: rgba(255, 77, 109, 0.2);
+            border-radius: 15px;
+            border: 1px solid #ff4d6d;
+        }
+        .signature {
+            margin-top: 25px;
+            font-size: 17px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bintang-bintang -->
+    <div class="star" style="top: 10%; left: 10%;">⭐</div>
+    <div class="star" style="top: 15%; right: 15%; animation-delay: 0.5s;">✨</div>
+    <div class="star" style="top: 25%; left: 20%; animation-delay: 1s;">⭐</div>
+    <div class="star" style="top: 8%; right: 30%; animation-delay: 1.5s;">✨</div>
+    <div class="star" style="top: 30%; right: 10%; animation-delay: 0.7s;">⭐</div>
+    <div class="star" style="top: 40%; left: 8%; animation-delay: 1.2s;">✨</div>
+
+    <div class="moon">🌙</div>
+    
+    <div class="card">
+        <h1>Hai Nadiraaa! 😍💖</h1>
+        <p class="from">Dari Arul yang kangen banget nih 😘</p>
+        
+        <div class="message">
+            Selamat malam cantikku! 🌙✨<br>
+            Udah mau tidur belum nih?<br>
+            Jangan lama-lama main HP-nya ya, matanya capek nanti! 😜
+        </div>
+
+        <div class="joke">
+            Kabar penting dari Arul: Kalau Nadira tidur telat, besok paginya makin cantik terus Arul makin naksir, nanti gak bisa fokus belajar lho! 😤 Jadi tidur sekarang ya!
+        </div>
+
+        <p>Inget ya: Kamu itu kayak charger buat aku — gak ada kamu, aku lemes 🥹<br>
+            Mimpiin aku doang ya! Kalau mimpiin orang lain, aku marah nih 😤💕
+        </p>
+
+        <div class="heart">❤️</div>
+
+        <p>Peluk gulingnya erat-erat, anggap aja itu aku yang lagi peluk kamu 🫂<br>
+            Udah kangen banget pengen ketemu!
+        </p>
+
+        <button class="btn" onclick="showSurprise()">Klik ini Nadira, ada yang mau aku bilang 🎁</button>
+
+        <div class="hidden" id="surprise">
+            <p style="font-size: 22px; font-weight: bold; color: #ffd700;">NADIRA, AKU SAYANG KAMU BANGET-BANGET!!! 💑💖💫</p>
+            <p style="margin-top: 10px;">Kamu emang yang paling spesial di hatiku, gak ada gantinya! 🩵<br>
+            Tidur nyenyak ya sayangku, mimpi yang indah-indah 🌙✨</p>
+            <p class="signature">— Arul 💌</p>
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
